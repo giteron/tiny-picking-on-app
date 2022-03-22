@@ -7,9 +7,60 @@
   pointer-events: none;
 }
 
+button {
+  padding: 20px;
+  font-size: larger;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.btn-picked-on {
+  background-color: grey;
+}
+.btn-picked-on:hover {
+  background-color: darkslategray;
+  color: lightgray;
+}
+.btn-picked-on:active {
+  background-color: black;
+  color: white;
+}
+
+.btn-not-picked-on:hover {
+  background-color: darkgrey;
+  color: black;
+}
+.btn-not-picked-on:active {
+  background-color: darkslategrey;
+  color: lightgrey;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media only screen and (max-width: 700px) {
+  button {
+    padding: 10px;
+    font-size: medium;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  button {
+    padding: 5px;
+    font-size: smaller;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3%;
+    cursor: pointer;
   }
 }
 

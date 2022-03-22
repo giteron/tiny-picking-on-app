@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Names from './components/Names';
 
 function App() {
   return (
     <div className="App">
-      Tiny Picking On App
+      <Header />
+      <Names />
     </div>
   );
 }
