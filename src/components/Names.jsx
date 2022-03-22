@@ -1,8 +1,8 @@
 import { useState } from "react";
-import seminarGroup from "../data/seminarGroup";
+import testData from "../data/testData";
 
 const Names = () => {
-    const [studentList, setStudentList] = useState(seminarGroup);
+    const [studentList, setStudentList] = useState(testData);
 
     const togglePickedOn = (studentName) => {
         setStudentList(currList => {
